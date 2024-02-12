@@ -1,4 +1,4 @@
-package controllers
+package controller
 
 import (
 
@@ -13,5 +13,5 @@ type Response struct {
 func Register() *http.ServeMux {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/dennis", reply())
-	return mux
+	return mux 
 }
